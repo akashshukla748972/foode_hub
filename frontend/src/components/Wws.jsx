@@ -35,7 +35,10 @@ const Wws = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12">
           {/* Services cards */}
           {servicesDummyData.map((item, index) => (
-            <div className="group relative rounded-xl p-4 sm:p-6 transition-transform duration-300">
+            <div
+              key={index}
+              className="group relative rounded-xl p-4 sm:p-6 transition-transform duration-300"
+            >
               <div className="overflow-hidden">
                 <img
                   src={item.img}

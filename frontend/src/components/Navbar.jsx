@@ -34,7 +34,10 @@ const Navbar = () => {
       {/* center navigation */}
       <div className="hidden md:flex space-x-4 lg:space-x-8">
         {menuItems.map((item, index) => (
-          <button className="flex items-center space-x-2 text-black hover:text-orange-600 transition-all duration-300 focus:outline-none">
+          <button
+            key={index}
+            className="flex items-center space-x-2 text-black hover:text-orange-600 transition-all duration-300 focus:outline-none"
+          >
             <span className="text-lg transition-transform group-hover:scale-125">
               {item.icon}
             </span>
@@ -93,7 +96,10 @@ const Navbar = () => {
         >
           <div className="p-4 space-y-4">
             {menuItems.map((item, index) => (
-              <button className="w-full flex items-center space-x-3 text-white hover:bg-white/20 px-4 rounded-xl transition-all focus:outline-none ">
+              <button
+                key={index}
+                className="w-full flex items-center space-x-3 text-white hover:bg-white/20 px-4 rounded-xl transition-all focus:outline-none "
+              >
                 <span className="text-xl">{item.icon}</span>
                 <span className="text-lg">{item.text}</span>
               </button>
