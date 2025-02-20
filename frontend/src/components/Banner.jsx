@@ -37,7 +37,7 @@ const Banner = () => {
         </div>
       )}
 
-      <div className="container mx-auto px-6 md:px-12 xl:px-20 flex flex-col lg:flex-row items-center justify-between gap-12">
+      <div className="container w-[95%] mx-auto px-6 md:px-12 xl:px-20 flex flex-col lg:flex-row items-center justify-between gap-12">
         {/* left content */}
         <div className="w-full lg:flex-1 text-center lg:text-left ">
           <h3 className="text-lg mt-5 md:text-xl lg:text-2xl font-black font-comfortaa text-gray-600 mb:2 md:mb-3">
@@ -112,7 +112,7 @@ const Banner = () => {
             <img
               src={Bannerfood}
               alt="Banner food"
-              className="w-full h-auto object-cover transform -rotate-180 hover:rotate-0 transition duration-500"
+              className="w-full h-auto object-cover transform -rotate-20 hover:rotate-0 transition duration-500 rounded-full"
             />
             <div className="absolute left-2 sm:left-4 md:left-6 top-4 sm:top-6 w-14 sm:w-14 md:w-20">
               <img
