@@ -4,6 +4,7 @@ import Banner from "./components/Banner";
 import Wws from "./components/Wws";
 import Om from "./components/Om";
 import Wts from "./components/Wts";
+import Footer from "./components/Footer";
 // import Om from "./components/Om";
 
 const App = () => {
@@ -22,6 +23,10 @@ const App = () => {
           <Wts />
         </div>
       </main>
+
+      <div className="mt-auto">
+        <Footer />
+      </div>
     </div>
   );
 };
